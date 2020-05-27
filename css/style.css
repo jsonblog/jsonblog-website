@@ -1,3 +1,11 @@
+@import url(
+  //fonts.googleapis.com/css?family=Open+Sans:400,
+  700,
+  300,
+  600,
+  800
+);
+
 html,
 body {
   height: 100%;
@@ -154,7 +162,7 @@ pre {
   border-top: 1px solid #e3e3e3;
 }
 #nav {
-  background: ##435aff;
+  background: #cbee85;
   font: 600 15px "Open Sans";
   overflow: hidden;
 }
@@ -206,7 +214,7 @@ pre {
   padding: 50px 0 50px;
 }
 #header.yellow {
-  background: ##435aff;
+  background: #cbee85;
 }
 #header.promo {
   padding: 80px 0 120px;
