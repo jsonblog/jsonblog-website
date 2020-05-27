@@ -1,5 +1,5 @@
-title: JSON Resume
-description: "JSON Resume is a community driven open source initiative to create a JSON based standard for resumes."
+title: JSON Blog
+description: "JSON Blog is cool."
 permalink: pretty
 markdown: kramdown
 include: [/.well-known]
