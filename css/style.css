@@ -162,7 +162,7 @@ pre {
   border-top: 1px solid #e3e3e3;
 }
 #nav {
-  background: #8f9dff;
+  background: ##435aff;
   font: 600 15px "Open Sans";
   overflow: hidden;
 }
@@ -214,7 +214,7 @@ pre {
   padding: 50px 0 50px;
 }
 #header.yellow {
-  background: #8f9dff;
+  background: ##435aff;
 }
 #header.promo {
   padding: 80px 0 120px;
