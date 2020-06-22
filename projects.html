@@ -6,13 +6,8 @@ title: Projects
 <header id="header">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h1>Community Projects</h2>
-      </div>
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-4">
-        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7DL23L&placement=jsonresumeorg" id="_carbonads_js"></script>
+      <div class="col-sm-12">
+        <h1>Community Projects</h1>
       </div>
     </div>
   </div>
@@ -20,17 +15,20 @@ title: Projects
 <div id="team" class="container">
   <div class="row">
     <div class="col-sm-6 contributing">
-      <p>JSON Resume was built to inspire a new creative movement around resumes. This page will showcase some of those ideas...</p>
+      <p>
+        JSON Blog was built to inspire a new creative movement around blogs.
+        This page will showcase some of those ideas...
+      </p>
       <ul>
-          {% for project in site.data.projects %}
-            <li>
-              <a href="{{project.link}}">{{project.name}}</a> - {{project.description}}
-            </li>
-          {% endfor %}
+        <li>Coming soon</li>
+        {% for project in site.data.projects %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endfor %}
       </ul>
     </div>
-    <div class="col-sm-6 team">
-
-    </div>
+    <div class="col-sm-6 team"></div>
   </div>
 </div>

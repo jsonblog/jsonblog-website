@@ -1,18 +1,13 @@
 ---
 layout: default
-title: Themes
+title: Generator
 ---
 
 <header id="header">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h1>Themes</h1>
-      </div>
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-4">
-        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7DL23L&placement=jsonresumeorg" id="_carbonads_js"></script>
+      <div class="col-sm-12">
+        <h1>Generators</h1>
       </div>
     </div>
   </div>
@@ -25,19 +20,28 @@ title: Themes
         <div class="row">
           <div class="col-sm-12 col-xs-6">
             <a href="http://themes.jsonresume.org/theme/{{ theme.slug }}">
-              <img style="height: 129px;" src="/img/themes/{{ theme.slug }}.jpeg">
+              <img
+                style="height: 129px;"
+                src="/img/themes/paper.jpeg"
+              />
               <!-- http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ theme.slug }} -->
             </a>
           </div>
           <div class="col-sm-12 col-xs-6 meta">
             <div class="name">{{ theme.name }}</div>
-            <div class="author">by <a href="{{theme.link}}" target="_blank">{{ theme.author }}</a></div>
+            <div class="author">
+              by <a href="{{theme.link}}" target="_blank">{{ theme.author }}</a>
+            </div>
             <!--<div class="rating">4.6/5</div>-->
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <a href="http://themes.jsonresume.org/theme/{{ theme.slug }}" class="btn">Preview theme</a>
+            <a
+              href="http://themes.jsonresume.org/theme/{{ theme.slug }}"
+              class="btn"
+              >Preview theme</a
+            >
           </div>
         </div>
       </div>
@@ -77,7 +81,7 @@ title: Themes
   <div class="clear: both;"></div>
   -->
 
-    <div class="row">
+  <div class="row">
     <!--
   <div class="col-md-5">
   <h3>Previous Winners</h3>
@@ -90,31 +94,52 @@ title: Themes
   </div>
   </div>
   -->
-  <div class="clear: both;"></div>
-  <p>
-  There are over <a href="https://npmsearch.com/?q=jsonresume-theme">250+ npm packages</a> of themes that we pick official themes from. 
-  </p>
-  <h2>Want to develop your own?</h2>
-  <p>Before you publish your theme to npm, you can work on it locally by putting the files beside your resume.json file. When you run `resume-cli serve`, it will look for a local index.js first.</p>
-  <p>Our theming system was released just recently and new themes have already started popping up. If you would like to develop a theme for the community please visit the <a href="http://github.com/jsonresume/theme-manager">theme-manager repo</a>.</p>
-<h3>Getting started</h3>
-<p>If you are using the registry to host your resume, you can easily test different themes by appending a query string e.g.</p>
-<a href="http://registry.jsonresume.org/thomasdavis?theme=flat">http://registry.jsonresume.org/thomasdavis?theme=flat</a>
-<p>Or you can set the default theme for your resume on the registry by using the <code>--theme</code> option in the CLI tool e.g.</p>
-<code>resume publish --theme flat</code>
-</div>
+    <div class="clear: both;"></div>
+    <p>
+      There are over
+      <a href="https://npmsearch.com/?q=jsonresume-theme">250+ npm packages</a>
+      of themes that we pick official themes from.
+    </p>
+    <h2>Want to develop your own?</h2>
+    <p>
+      Before you publish your theme to npm, you can work on it locally by
+      putting the files beside your resume.json file. When you run `resume-cli
+      serve`, it will look for a local index.js first.
+    </p>
+    <p>
+      Our theming system was released just recently and new themes have already
+      started popping up. If you would like to develop a theme for the community
+      please visit the
+      <a href="http://github.com/jsonresume/theme-manager">theme-manager repo</a
+      >.
+    </p>
+    <h3>Getting started</h3>
+    <p>
+      If you are using the registry to host your resume, you can easily test
+      different themes by appending a query string e.g.
+    </p>
+    <a href="http://registry.jsonresume.org/thomasdavis?theme=flat"
+      >http://registry.jsonresume.org/thomasdavis?theme=flat</a
+    >
+    <p>
+      Or you can set the default theme for your resume on the registry by using
+      the <code>--theme</code> option in the CLI tool e.g.
+    </p>
+    <code>resume publish --theme flat</code>
+  </div>
 
-<script>
-  var themes = {
-    {% for theme in site.data.themes %}
-      "{{theme.slug}}": {
-        "name": "{{theme.name}}",
-        "slug": "{{theme.slug}}",
-        "author": "{{theme.author}}",
-        "author_link": "{{theme.link}}"
-      },
-    {% endfor %}
-    thiscodesucks: null
-  }
-  delete themes.elegant;
-</script>
+  <script>
+    var themes = {
+      {% for theme in site.data.themes %}
+        "{{theme.slug}}": {
+          "name": "{{theme.name}}",
+          "slug": "{{theme.slug}}",
+          "author": "{{theme.author}}",
+          "author_link": "{{theme.link}}"
+        },
+      {% endfor %}
+      thiscodesucks: null
+    }
+    delete themes.elegant;
+  </script>
+</div>
